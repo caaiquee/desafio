@@ -20,7 +20,7 @@ context('Funcionalidade table', () => {
         cy.get('tbody tr:nth-child(1)').should('have.attr', 'data-row-key', 1)
     });
 
-    it.only('Mudar para a página de número 2', () => {
+    it('Mudar para a página de número 2', () => {
         cy.get('.ant-pagination-item-2').click()
         cy.get('tbody tr:nth-child(1)').should('have.attr', 'data-row-key', 11)
     });
